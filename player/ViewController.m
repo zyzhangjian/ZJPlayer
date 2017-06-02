@@ -7,13 +7,10 @@
 //
 
 #import "ViewController.h"
-#import <AVFoundation/AVFoundation.h>
 #import "HFPlayerView.h"
-const float PLAYER_VOLUME1 = 0.0;
+
 @interface ViewController ()
-@property (nonatomic,strong) AVPlayer *player;
-@property (nonatomic,assign)CMTime time;
-@property(nonatomic,strong)UIView *rootView;
+
 @end
 
 @implementation ViewController
