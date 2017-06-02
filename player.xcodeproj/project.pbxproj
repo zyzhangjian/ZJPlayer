@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD380B9E1EDFFBBF00E2ED11 /* 1234.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DD380B9D1EDFFBBF00E2ED11 /* 1234.mp4 */; };
+		DD380BA21EE0121D00E2ED11 /* HFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD380BA11EE0121D00E2ED11 /* HFPlayerView.m */; };
 		DD8927781EDEC3F9008D59E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8927771EDEC3F9008D59E5 /* main.m */; };
 		DD89277B1EDEC3F9008D59E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89277A1EDEC3F9008D59E5 /* AppDelegate.m */; };
 		DD89277E1EDEC3F9008D59E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89277D1EDEC3F9008D59E5 /* ViewController.m */; };
@@ -15,6 +17,9 @@
 		DD8927861EDEC3F9008D59E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8927841EDEC3F9008D59E5 /* LaunchScreen.storyboard */; };
 		DD8927911EDEC3F9008D59E5 /* playerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8927901EDEC3F9008D59E5 /* playerTests.m */; };
 		DD89279C1EDEC3F9008D59E5 /* playerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89279B1EDEC3F9008D59E5 /* playerUITests.m */; };
+		DD8927AA1EDEC437008D59E5 /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DD8927A91EDEC437008D59E5 /* qidong.mp4 */; };
+		DD8927AD1EDEC50A008D59E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8927AC1EDEC50A008D59E5 /* AVFoundation.framework */; };
+		DD8927AF1EDEC5DF008D59E5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8927AE1EDEC5DF008D59E5 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD380B9D1EDFFBBF00E2ED11 /* 1234.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1234.mp4; sourceTree = "<group>"; };
+		DD380BA01EE0121D00E2ED11 /* HFPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFPlayerView.h; sourceTree = "<group>"; };
+		DD380BA11EE0121D00E2ED11 /* HFPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFPlayerView.m; sourceTree = "<group>"; };
 		DD8927731EDEC3F9008D59E5 /* player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8927771EDEC3F9008D59E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD8927791EDEC3F9008D59E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +59,9 @@
 		DD8927971EDEC3F9008D59E5 /* playerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD89279B1EDEC3F9008D59E5 /* playerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = playerUITests.m; sourceTree = "<group>"; };
 		DD89279D1EDEC3F9008D59E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8927A91EDEC437008D59E5 /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
+		DD8927AC1EDEC50A008D59E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DD8927AE1EDEC5DF008D59E5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8927AF1EDEC5DF008D59E5 /* AVKit.framework in Frameworks */,
+				DD8927AD1EDEC50A008D59E5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD380B9F1EE0121D00E2ED11 /* HFPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				DD380BA01EE0121D00E2ED11 /* HFPlayerView.h */,
+				DD380BA11EE0121D00E2ED11 /* HFPlayerView.m */,
+			);
+			path = HFPlayerView;
+			sourceTree = "<group>";
+		};
 		DD89276A1EDEC3F9008D59E5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,7 @@
 				DD89278F1EDEC3F9008D59E5 /* playerTests */,
 				DD89279A1EDEC3F9008D59E5 /* playerUITests */,
 				DD8927741EDEC3F9008D59E5 /* Products */,
+				DD8927AB1EDEC50A008D59E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +124,13 @@
 		DD8927751EDEC3F9008D59E5 /* player */ = {
 			isa = PBXGroup;
 			children = (
+				DD380B9F1EE0121D00E2ED11 /* HFPlayerView */,
 				DD8927791EDEC3F9008D59E5 /* AppDelegate.h */,
 				DD89277A1EDEC3F9008D59E5 /* AppDelegate.m */,
 				DD89277C1EDEC3F9008D59E5 /* ViewController.h */,
 				DD89277D1EDEC3F9008D59E5 /* ViewController.m */,
+				DD8927A91EDEC437008D59E5 /* qidong.mp4 */,
+				DD380B9D1EDFFBBF00E2ED11 /* 1234.mp4 */,
 				DD89277F1EDEC3F9008D59E5 /* Main.storyboard */,
 				DD8927821EDEC3F9008D59E5 /* Assets.xcassets */,
 				DD8927841EDEC3F9008D59E5 /* LaunchScreen.storyboard */,
@@ -138,6 +164,15 @@
 				DD89279D1EDEC3F9008D59E5 /* Info.plist */,
 			);
 			path = playerUITests;
+			sourceTree = "<group>";
+		};
+		DD8927AB1EDEC50A008D59E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD8927AE1EDEC5DF008D59E5 /* AVKit.framework */,
+				DD8927AC1EDEC50A008D59E5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +242,8 @@
 				TargetAttributes = {
 					DD8927721EDEC3F9008D59E5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FLN339CM8A;
+						ProvisioningStyle = Manual;
 					};
 					DD89278B1EDEC3F9008D59E5 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -249,6 +285,8 @@
 				DD8927861EDEC3F9008D59E5 /* LaunchScreen.storyboard in Resources */,
 				DD8927831EDEC3F9008D59E5 /* Assets.xcassets in Resources */,
 				DD8927811EDEC3F9008D59E5 /* Main.storyboard in Resources */,
+				DD8927AA1EDEC437008D59E5 /* qidong.mp4 in Resources */,
+				DD380B9E1EDFFBBF00E2ED11 /* 1234.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +314,7 @@
 				DD89277E1EDEC3F9008D59E5 /* ViewController.m in Sources */,
 				DD89277B1EDEC3F9008D59E5 /* AppDelegate.m in Sources */,
 				DD8927781EDEC3F9008D59E5 /* main.m in Sources */,
+				DD380BA21EE0121D00E2ED11 /* HFPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +461,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FLN339CM8A;
 				INFOPLIST_FILE = player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.starunionTest.HFDemo.player;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starunionTest.player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "83f00be5-0e21-4884-ae51-45c55216b61c";
+				PROVISIONING_PROFILE_SPECIFIER = "通配符-0405";
 			};
 			name = Debug;
 		};
@@ -433,10 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FLN339CM8A;
 				INFOPLIST_FILE = player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.starunionTest.HFDemo.player;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starunionTest.player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "83f00be5-0e21-4884-ae51-45c55216b61c";
+				PROVISIONING_PROFILE_SPECIFIER = "通配符-0405";
 			};
 			name = Release;
 		};
@@ -505,6 +552,7 @@
 				DD8927A21EDEC3F9008D59E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD8927A31EDEC3F9008D59E5 /* Build configuration list for PBXNativeTarget "playerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +561,7 @@
 				DD8927A51EDEC3F9008D59E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD8927A61EDEC3F9008D59E5 /* Build configuration list for PBXNativeTarget "playerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +570,7 @@
 				DD8927A81EDEC3F9008D59E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
