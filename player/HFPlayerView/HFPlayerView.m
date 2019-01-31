@@ -14,16 +14,17 @@ const float PLAYER_VOLUME = 0.0;
 @interface HFPlayerView()
 
 @property (nonatomic,strong) AVPlayer       *player;
-
+@property (nonatomic, copy)  void (^finishBlock)(void);
 @property (nonatomic,assign) CMTime         time;
 @property (nonatomic,copy)   NSString       *videoPath;
 @end
 
 @implementation HFPlayerView
 
-+ (instancetype)videoWithFrame:(CGRect)frame videoPach:(NSString *)path
++ (instancetype)videoWithFrame:(CGRect)frame videoPach:(NSString *)path finishBlock:(void(^)(void))block
 {
     HFPlayerView *player = [[HFPlayerView alloc]initWithFrame:frame];
+    player.finishBlock = block;
     player.videoPath = path;
     return player;
 }
@@ -73,6 +74,9 @@ const float PLAYER_VOLUME = 0.0;
         AVPlayerStatus status= [[change objectForKey:@"new"] intValue];
         if(status == AVPlayerStatusReadyToPlay){
             [_player play];
+            if (self.finishBlock != nil) {
+                self.finishBlock();
+            }
         }
     }
 }
@@ -131,3 +135,4 @@ const float PLAYER_VOLUME = 0.0;
     self.player = nil;
 }
 @end
+

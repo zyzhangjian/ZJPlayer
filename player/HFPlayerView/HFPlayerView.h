@@ -12,9 +12,11 @@
 
 /**
  创建播放器
-
+ 
  @param frame 播放器位置
  @param path  视频路径
+ @param block 开始播放回调
  */
-+ (instancetype)videoWithFrame:(CGRect)frame videoPach:(NSString *)path;
++ (instancetype)videoWithFrame:(CGRect)frame videoPach:(NSString *)path finishBlock:(void(^)(void))block;
 @end
+
